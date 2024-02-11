@@ -1,3 +1,1 @@
-# Green Shop Project
-
-## Google group's with TENX
+# Zahiriddin Muhammad Bobur
