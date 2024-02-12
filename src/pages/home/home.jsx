@@ -3,7 +3,6 @@ import {
   Hero,
   Information,
   Menu,
-  Posts,
   Sort
 } from '../../components/pages/home'
 import { useTranslation } from 'react-i18next'
@@ -26,7 +25,6 @@ export const Home = () => {
         </div>
       </div>
       <Information />
-      <Posts />
     </div>
   )
 }

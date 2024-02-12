@@ -17,7 +17,7 @@ export const navbarMenus = [
   },
   {
     id: uuidv4(),
-    name: "blogsLink",
-    link: "/blogs",
+    name: "walksMade",
+    link: "/walksMade",
   },
 ];
