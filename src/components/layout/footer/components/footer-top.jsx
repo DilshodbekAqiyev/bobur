@@ -1,23 +1,56 @@
-import { Button, Heading3, Heading5 } from '../../../common'
+import emailjs from '@emailjs/browser'
+import { Heading3, Heading5 } from '../../../common'
+import { useState } from 'react'
+
+const SERVICE_ID = 'service_y5mqva6'
 
 export const FooterTop = () => {
+  const [inputValue, setInputValue] = useState('')
+
+  const handleSubscription = async (e) => {
+    e.preventDefault()
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        'template_vqnv41e',
+        {
+          from_name: 'Boburiylar',
+          reply_to: 'bu juda ajoyib habar',
+          message:
+            'bizni saytdan foydalanganingiz uchun raxmat \n bu saytdan hali ancha vaqt foydalanasiz degan umiddamiz',
+          to_email: inputValue,
+          to_name: inputValue,
+        },
+        '3KBXrKlCMY5m-hunh'
+      )
+      setInputValue('')
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   return (
     <div className="flex justify-between items-center px-[23px] py-[27px] bg-grey dark:bg-slate-800">
-      <div className="pl-[31px]">
+      <div>
         <Heading3>Subcribe our Newsletter</Heading3>
-        <Heading5>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur rerum aperiam dicta, libero
-          explicabo earum expedita, doloremque ipsam optio assumenda? Suscipit, dolor cupiditate nulla.
-        </Heading5>
+        <Heading5>Subscribe your email for newsletter and featured news based on your interest</Heading5>
       </div>
-      <div className="pl-[31px]">
-        <form className="flex my-[18px]">
+      <div>
+        <form className="flex my-[18px] relative" onSubmit={handleSubscription}>
           <input
-            type="text"
+            type="email"
             placeholder="Enter your email address..."
-            className="w-[75%] py-[12px] px-[11px] rounded-[6px] text-black"
+            className="w-[450px] py-3 px-[11px] rounded-[8px] text-black pr-[80px]"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
           />
-          <Button styles="w-[25%] rounded-l-none">Join</Button>
+          <button
+            className="text-white bg-green text font-medium leading-2 flex items-center justify-center border border-transparent absolute top-0 right-0 py-3 px-5 rounded-[8px] mt-[0.12px]"
+            type="submit"
+          >
+            Join
+          </button>
         </form>
       </div>
     </div>
