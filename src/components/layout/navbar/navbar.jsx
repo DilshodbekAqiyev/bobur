@@ -28,7 +28,7 @@ export const Navbar = ({ changeLang, changeTheme, theme }) => {
   };
   return (
     <nav className=" py-[0px] flex sticky top-0 left-0 z-[5] bg-white dark:bg-slate-900 items-center justify-between border-b-[1px]">
-      <div className="flex items-center">
+      <div className="flex items-center w-[60px] h-[60px] rounded-[50%] overflow-hidden">
         <Logo />
       </div>
       <div className="flex gap-[50px]">
