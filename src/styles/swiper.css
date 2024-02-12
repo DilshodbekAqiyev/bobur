@@ -1,6 +1,6 @@
 .col-span-2 .swiper-pagination-bullet {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,9 +8,9 @@
   font-weight: 900;
   line-height: 16px;
   border-radius: 10%;
-  color: #41ab56;
+  color: rgb(5, 216, 5);
   background: transparent;
-  border: 1px solid #46a358;
+  border: 2px solid rgb(255, 33, 33);
   position: absolute;
   bottom: 0;
   right: 100px;
@@ -22,17 +22,19 @@
     right: 0;
 }
 .swiper-pagination-bullet{
-  background: #888888;
+  background: #343232;
+  width: 13px;
+  height: 13px;
 }
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #46a358;
+  color: #3a3838;
+  background: rgb(5, 216, 5);
   border-color: transparent;
 }
 
 
 .col-span-2 .swiper-pagination-bullet-active{
-    background-color: #46a358;
+    background-color: rgb(5, 216, 5);
     border: transparent;
     color: white;
 }

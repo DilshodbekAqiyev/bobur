@@ -13,34 +13,8 @@ export const Footer = () => {
   return (
     <div>
       <div className="flex justify-between items-center px-[23px] py-[27px] bg-grey dark:bg-slate-800">
-        <div className="pr-[31px]">
-          <img src="/img/gardencare.png" alt="" />{" "}
-          <Heading3 styles="mt-[15px] mb-[9px]">Garden Care</Heading3>{" "}
-          <Heading5>
-            We are an online plant shop offering a wide range of cheap and
-            trendy plants.
-          </Heading5>
-        </div>
-        <div className="px-[31px] border-x">
-          <img src="/img/plantrenovation.png" alt="" />
-          <Heading3 styles="mt-[15px] mb-[9px]">Plant Renovation</Heading3>
-          <Heading5>
-            We are an online plant shop offering a wide range of cheap and
-            trendy plants.
-          </Heading5>
-        </div>
-        <div className="px-[31px]">
-          <img src="/img/wateringgraden.png" alt="" />{" "}
-          <Heading3 styles="mt-[15px] mb-[9px]">Watering Graden</Heading3>
-          <Heading5>
-            We are an online plant shop offering a wide range of cheap and
-            trendy plants.
-          </Heading5>
-        </div>
         <div className="pl-[31px]">
-          <Heading3 styles="text-4">
-            Would you like to join newsletters?
-          </Heading3>
+
           <form className="flex my-[18px]">
             <input
               type="text"
@@ -49,29 +23,23 @@ export const Footer = () => {
             />
             <Button styles="w-[25%] rounded-l-none">Join</Button>
           </form>
-          <Heading5 styles="text-1">
-            We usually post offers and challenges in newsletter. We’re your
-            online houseplant destination. We offer a wide range of houseplants
-            and accessories shipped directly from our (green)house to yours!{" "}
-          </Heading5>
         </div>
       </div>
       <div className="flex gap-[60px] items-center px-[23px] py-[27px] bg-[#46A3581A]">
-        <Logo />
         <div className="flex gap-[12px] items-center">
           <HiOutlineLocationMarker className="text-green w-[12.5px] h-[15px]" />
-          <Heading5 styles="text-black">
-            70 West Buckingham Ave. <br />
-            Farmingdale, NY 11735
-          </Heading5>
+          <Heading5 styles="text-black"> Surxondaryo v. Termez Sh. TerDU </Heading5>
         </div>
         <div className="flex gap-[12px] items-center">
           <TbMail className="text-green w-[16px] h-[15px]" />
-          <Heading5 styles="text-black">contact@greenshop.com</Heading5>
+          <Heading5 styles="text-black"><a href="https://mail.google.com/mail/u/0/#inbox">sardorboltayev0712@gmail.com</a></Heading5>
+          <TbMail className="text-green w-[16px] h-[15px]" />
+          <Heading5 styles="text-black"><a href="https://mail.google.com/mail/u/0/#inbox">dilshodjonaqiyev@gmail.com</a></Heading5>
+
         </div>
         <div className="flex gap-[12px] items-center">
           <TbPhoneCall className="text-green w-[16px] h-[16px]" />
-          <Heading5 styles="text-black">+88 01911 717 490</Heading5>
+          <Heading5 styles="text-black">91-969-07-12  , 88-969-88-84</Heading5>
         </div>
       </div>
       <div className="flex justify-between items-center px-[23px] py-[31px] bg-grey dark:bg-slate-800 border-b">

@@ -3,9 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay ,Pagination,Navigation} from "swiper/modules";
 // component
-import { Button, Heading5 } from "../../../common";
 
 export const Hero = () => {
   const img1 = ( <img className="w-[79.8%] pt-[8px]" src="/img/bobur-img.jpeg" alt="" />  );
@@ -16,7 +15,17 @@ export const Hero = () => {
   
   return (
     <div className="bg-grey dark:bg-slate-800 mb-[50px] mt-[12px] px-[43px] w-[92%]">
-      <Swiper  pagination={{ clickable: true }} modules={[Pagination]}>
+      <Swiper spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}>
         <SwiperSlide className="flex items-center justify-center">{img2}</SwiperSlide>
         <SwiperSlide className="flex items-center justify-center">{img3}</SwiperSlide>
         <SwiperSlide className="flex items-center justify-center">{img5}</SwiperSlide>
