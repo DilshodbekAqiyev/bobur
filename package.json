@@ -4,6 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "main": "src/main.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DilshodbekAqiyev/bobur.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
