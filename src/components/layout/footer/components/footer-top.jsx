@@ -1,4 +1,4 @@
-import { Button, Heading3, Heading5 } from "components/common/index";
+import { Button, Heading3, Heading5 } from '../../../common'
 
 export const FooterTop = () => {
   return (
@@ -6,9 +6,8 @@ export const FooterTop = () => {
       <div className="pl-[31px]">
         <Heading3>Subcribe our Newsletter</Heading3>
         <Heading5>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-          consequatur rerum aperiam dicta, libero explicabo earum expedita,
-          doloremque ipsam optio assumenda? Suscipit, dolor cupiditate nulla.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur rerum aperiam dicta, libero
+          explicabo earum expedita, doloremque ipsam optio assumenda? Suscipit, dolor cupiditate nulla.
         </Heading5>
       </div>
       <div className="pl-[31px]">
@@ -22,5 +21,5 @@ export const FooterTop = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}

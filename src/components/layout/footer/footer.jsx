@@ -1,9 +1,9 @@
-import { Heading3, Heading5 } from "../../common";
-import { CgFacebook } from "react-icons/cg";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FooterTop } from "./components/footer-top";
+import { Heading3, Heading5 } from '../../common'
+import { CgFacebook } from 'react-icons/cg'
+import { BsInstagram } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FooterTop } from './components/footer-top'
 
 export const Footer = () => {
   return (
@@ -70,9 +70,7 @@ export const Footer = () => {
           <img src="/img/collaborator.png" alt="" />
         </div>
       </div>
-      <Heading5 styles="text-black py-[20px] text-center">
-        © 2021 GreenShop. All Rights Reserved.
-      </Heading5>
+      <Heading5 styles="text-black py-[20px] text-center">© 2021 GreenShop. All Rights Reserved.</Heading5>
     </div>
-  );
-};
+  )
+}
