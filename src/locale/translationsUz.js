@@ -1,7 +1,7 @@
 const translationsUz = {
   homeLink:"Asosiy",
   shopLink:"Xarid",
-  plantLink: "O'simlik",
+  plantLink: "Kitoblar",
   blogsLink: 'Bloglar',
   loginBtn: 'Kirish',
   allPlants: 'Barchasi',
