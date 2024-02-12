@@ -1,7 +1,7 @@
 const translationsEn = {
   homeLink:"Home",
   shopLink:"Shop",
-  plantLink: 'Plant Care',
+  plantLink: 'Books',
   blogsLink: 'Blogs',
   loginBtn: 'Login',
   allPlants: 'All Plants',
