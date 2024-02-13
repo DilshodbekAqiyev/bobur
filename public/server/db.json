@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1c47069e-e282-4bf8-a43b-b256ac3689ba",
+      "userName": "Example",
+      "email": "example@gmail.com",
+      "password": "12345678",
+      "favourite": []
+    },
+    {
+      "id": "d79ba7b6-f87e-4b89-a762-9db5f0403f77",
+      "userName": "casjd",
+      "email": "cskdn@gmail.com",
+      "password": "cskdn@gmail.com",
+      "favourite": []
+    },
+    {
+      "id": "5a3e379e-005a-438a-bd95-c79c375be02b",
+      "userName": "cdakjs",
+      "email": "dilshodjonaqiyev@gmail.com",
+      "password": "12345678",
+      "favourite": []
+    },
+    {
+      "id": "42956df6-1df4-4412-9041-303474dbe161",
+      "userName": "casdj",
+      "email": "uguevb@gmail.com",
+      "password": "12345678",
+      "favourite": []
+    },
+    {
+      "id": "dcb4e64a-f332-4ed8-9fb8-8fc440110f6d",
+      "userName": "scbjshdfvs",
+      "email": "eskjvsdfv@gmail.com",
+      "password": "12345678",
+      "favourite": []
+    },
+    {
+      "id": "b2fd9261-c97e-411d-b81f-bc69d037fd39",
+      "userName": "cdsjnacas",
+      "email": "hvhgvjhgvj@gmail.com",
+      "password": "12345678",
+      "favourite": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "840c4ae6-82a2-42eb-a0e7-b015739c6ead",
+      "title": "",
+      "description": "",
+      "src": ""
+    }
+  ]
+}

@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 const flowersSlice = createSlice({
-  name: "flowers",
+  name: 'flowers',
   initialState: {
     totalPrice: 0,
     items: [],
@@ -9,19 +9,17 @@ const flowersSlice = createSlice({
   reducers: {
     addFlower(state, action) {
       if (action.payload?.count >= 1) {
-        const flower = state.items.find(
-          (flower) => flower.id === action.payload.id
-        );
-        flower.count++;
+        const flower = state.items.find((flower) => flower.id === action.payload.id)
+        flower.count++
       } else {
-        action.payload.count = 1;
-        state.items.unshift(action.payload);
+        action.payload.count = 1
+        state.items.unshift(action.payload)
       }
     },
     removeFlower(state, action) {},
   },
-});
+})
 
-export const flowersActions = flowersSlice.actions;
+export const flowersActions = flowersSlice.actions
 
-export const flowersReducers = flowersSlice.reducer;
+export const flowersReducers = flowersSlice.reducer
