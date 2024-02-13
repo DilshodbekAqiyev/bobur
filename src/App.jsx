@@ -5,11 +5,12 @@ import { NotFound } from './pages/not-found/not-found'
 import { Cart, Checkout, Shop } from './pages/shops'
 import { Footer, Navbar, NavbarTop } from './components/layout'
 import { Auth } from './pages/auth/auth'
-
+import {ContactUS,} from "./pages/contactus/contactus";
 import { Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import i18n from './locale/i18n'
 import { WalksMade } from './components/pages/walksMade'
+
 
 function App () {
   const [theme, setTheme] = useState(null)
@@ -28,15 +29,19 @@ function App () {
   return (
     <div className='dark:bg-slate-900 bg-white'>
       <div className='container dark:bg-slate-900 font-cera-pro'>
+     
         <NavbarTop />
         <Navbar changeLang={changeLang} changeTheme={changeTheme} theme={theme} />
         <Routes>
           <Route path='/' element={<Home />} />
-
+           
           <Route path='/shop' element={<Shop />}>
             <Route path='/shop/shopping-cart' element={<Cart />} />
             <Route path='/shop/checkout' element={<Checkout />} />
           </Route>
+          
+            <Route path='/contactus' element={<ContactUS/>}>
+            </Route>
 
           <Route path='/walksMade' element={<WalksMade />} />
           <Route path='/account' element={<Account />}>

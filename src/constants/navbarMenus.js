@@ -20,4 +20,9 @@ export const navbarMenus = [
     name: "walksMade",
     link: "/walksMade",
   },
+  {
+    id:uuidv4(),
+    name:"Contact us",
+    link:"/contactus",
+  }
 ];
