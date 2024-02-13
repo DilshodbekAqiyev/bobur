@@ -1,5 +1,3 @@
 export const Downloads = () => {
-  return (
-    <div>downloads</div>
-  )
+  return <div>downloads</div>
 }
