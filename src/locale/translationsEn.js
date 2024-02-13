@@ -11,6 +11,7 @@ const translationsEn = {
   myaccount: 'My Account',
   ourstores: 'Our stores',
   contactuc: 'Contact us',
+  contactuc1:"Contact us",
   carrer: 'Career',
   helpguide: 'Help & Guide',
   helpcenter: 'Help Center ',

@@ -11,6 +11,7 @@ const translationsUz = {
   myaccount: 'Mening Hisobim',
   ourstores: 'Bizning do`konlarimiz',
   contactuc: 'Biz bilan bog`laning',
+  contactuc1:"Bog'lanish",
   carrer: 'Karyera',
   helpguide: 'Yordam va qoʻllanma',
   helpcenter: 'Yordam markazi',
