@@ -1,23 +1,23 @@
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from 'uuid'
 export const navbarMenus = [
   {
     id: uuidv4(),
-    name: "homeLink",
-    link: "/",
+    name: 'homeLink',
+    link: '/',
   },
   {
     id: uuidv4(),
-    name: "shopLink",
-    link: "/shop",
+    name: 'shopLink',
+    link: '/shop',
   },
   {
     id: uuidv4(),
-    name: "plantLink",
-    link: "/plant-care",
+    name: 'plantLink',
+    link: '/plant-care',
   },
   {
     id: uuidv4(),
-    name: "walksMade",
-    link: "/walksMade",
+    name: 'walksMade',
+    link: '/walksMade',
   },
-];
+]

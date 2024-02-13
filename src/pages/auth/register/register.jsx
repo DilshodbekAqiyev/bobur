@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import { Button, Heading5 } from '../../../components/common'
 import { API } from '../../../constants/api'
+import { toast } from 'react-toastify'
+import useLocalStorageUserID from '../../../hook/getUser/getUser'
 
 export const Register = () => {
   const [userRegistration, setUserRegistration] = useState({
@@ -11,6 +14,9 @@ export const Register = () => {
     confirmPassword: '',
   })
   const [passwordError, setPasswordError] = useState('')
+  const [isRegistrationSuccessful, setRegistrationSuccessful] = useState(false)
+  const navigate = useNavigate()
+  const { setUserIDToLocalStorage } = useLocalStorageUserID()
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -21,31 +27,56 @@ export const Register = () => {
   }
 
   useEffect(() => {
-    if (userRegistration.password.length < 8) {
+    if (userRegistration.password.length > 0 && userRegistration.password.length < 8) {
       setPasswordError('Password must be more than 8 characters long')
+    } else {
+      setPasswordError('')
     }
   }, [userRegistration.password.length])
+
+  const notifyToast = (message, success = true) =>
+    toast(message, {
+      autoClose: 2000,
+      theme: 'light',
+      className: `shadow-none border w-full text-white ${success ? 'bg-green-500' : 'bg-red-500'}`,
+    })
 
   const handleRegister = async (e) => {
     e.preventDefault()
 
-    if (userRegistration.password !== userRegistration.confirmPassword) {
-      setPasswordError('Passwords do not match')
+    if (
+      !userRegistration.email ||
+      !userRegistration.password ||
+      !userRegistration.username ||
+      !userRegistration.confirmPassword
+    ) {
+      notifyToast('Please fill in all fields', true)
       return
     }
 
-    setPasswordError('')
-
-    const newUser = {
-      id: uuidv4(),
-      email: userRegistration.email,
-      userName: userRegistration.username,
-      password: userRegistration.password,
-      favourite: [],
+    if (userRegistration.password !== userRegistration.confirmPassword) {
+      setPasswordError('Passwords do not match')
+      notifyToast('Passwords do not match', false)
+      return
     }
 
     try {
-      const response = await fetch(API + '/users', {
+      const existingUserResponse = await fetch(`${API}/users?email=${userRegistration.email}`)
+      const existingUsers = await existingUserResponse.json()
+      if (existingUsers.length > 0) {
+        notifyToast('This email is already registered', false)
+        return
+      }
+
+      const newUser = {
+        id: uuidv4(),
+        userName: userRegistration.username,
+        email: userRegistration.email,
+        password: userRegistration.password,
+        favourite: [],
+      }
+
+      const response = await fetch(`${API}/users`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,11 +84,17 @@ export const Register = () => {
         body: JSON.stringify(newUser),
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to add new user')
+      if (response.ok) {
+        if (!isRegistrationSuccessful) {
+          setRegistrationSuccessful(true)
+          navigate('/')
+          window.location.reload()
+          setUserIDToLocalStorage(newUser.id)
+          notifyToast('You have registered successfully')
+        }
+      } else {
+        throw new Error('Failed to add a new user')
       }
-
-      console.log('New user added:', newUser)
 
       setUserRegistration({
         username: '',
@@ -66,7 +103,7 @@ export const Register = () => {
         confirmPassword: '',
       })
     } catch (error) {
-      console.error('Error adding new user:', error)
+      notifyToast('Failed to add a new user', false)
     }
   }
 
@@ -107,10 +144,10 @@ export const Register = () => {
           onChange={handleInputChange}
         />
         {passwordError && <p className="text-red-600">{passwordError}</p>}
+        <Button type="submit" styles="w-full py-[13px] mt-4">
+          Register
+        </Button>
       </form>
-      <Button type="submit" styles="w-full py-[13px] mt-[30px]">
-        Register
-      </Button>
     </>
   )
 }

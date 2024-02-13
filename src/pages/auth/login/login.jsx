@@ -1,12 +1,22 @@
 import { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { Heading5, Button } from '../../../components/common'
+import { Heading5, Button, Heading3 } from '../../../components/common'
 import { API } from '../../../constants/api'
+import useLocalStorageUserID from '../../../hook/getUser/getUser'
+import { toast } from 'react-toastify'
 
 export const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
+  const { setUserIDToLocalStorage } = useLocalStorageUserID()
+
+  const notifyToast = (message, success = true) =>
+    toast(message, {
+      autoClose: 2000,
+      theme: 'light',
+      className: `shadow-none border w-full text-white ${success ? 'bg-green-500' : 'bg-red-500'}`,
+    })
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value)
@@ -26,13 +36,17 @@ export const Login = () => {
       const user = users.find((u) => u.email === email && u.password === password)
 
       if (user) {
-        localStorage.setItem('userID', user.id)
+        setUserIDToLocalStorage(user.id)
         navigate('/')
+        window.location.reload()
+        notifyToast('Login successful')
         console.log('Login successful:', user)
       } else {
+        notifyToast('Invalid email or password', false)
         console.error('Invalid credentials')
       }
     } catch (error) {
+      notifyToast('Error fetching user data', false)
       console.error('Error fetching user data:', error)
     }
   }
@@ -41,6 +55,7 @@ export const Login = () => {
     <>
       <Heading5 styles="dark:text-white my-[20px]">Enter your email and password to login.</Heading5>
       <form className="w-[100%] flex flex-col gap-[17px]" onSubmit={handleLogin}>
+        <Heading3>Your Email</Heading3>
         <input
           className="border w-full text-4 p-[13px] rounded-[6px] tracking-[1px] focus:text-green focus:border-green"
           placeholder="example@gmail.com"
@@ -48,6 +63,7 @@ export const Login = () => {
           value={email}
           onChange={handleEmailChange}
         />
+        <Heading3>Your Password</Heading3>
         <input
           className="border w-full text-4 p-[13px] rounded-[6px] tracking-[1px] focus:text-green focus:border-green"
           placeholder="Password"
