@@ -1,11 +1,13 @@
 import emailjs from '@emailjs/browser'
 import { Heading3, Heading5 } from '../../../common'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const SERVICE_ID = 'service_y5mqva6'
 
 export const FooterTop = () => {
   const [inputValue, setInputValue] = useState('')
+  const { t } = useTranslation()
 
   const handleSubscription = async (e) => {
     e.preventDefault()
@@ -33,8 +35,8 @@ export const FooterTop = () => {
   return (
     <div className="flex justify-between items-center px-[23px] py-[27px] bg-grey dark:bg-slate-800">
       <div>
-        <Heading3>Subcribe our Newsletter</Heading3>
-        <Heading5>Subscribe your email for newsletter and featured news based on your interest</Heading5>
+        <Heading3>{t("subcrib1")}</Heading3>
+        <Heading5>{t("subcrib2")}</Heading5>
       </div>
       <div>
         <form className="flex my-[18px] relative" onSubmit={handleSubscription}>

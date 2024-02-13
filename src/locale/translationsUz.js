@@ -30,10 +30,14 @@ const translationsUz = {
   jang5:
     'KOBULNI EGALLASHI .  Bobur tomonidan Kobulda zarb qilingan tanga, 1507—1508 Bobur jangchilari,1520-yillar Bobur 200-300 kishilik navkari bilan Hisor togʻlari orqali Afgʻonistonga oʻtadi va u yerdagi ichki nizolardan foydalanib Gʻazni va Kobulni egallaydi. Bobur Kobulni egallagach, mustaqil davlat tuzishga jadal kirishadi, qoʻshinni tartibga keltiradi, qattiq ichki intizom oʻrnatadi. Kobulga, umuman Afgʻonistonga Bobur oʻz yurti kabi qaradi, qurilish, obodonlashtirish, kasbu hunar va qishloq xoʻjaligini rivojlantirish ishlarini boshlab yuboradi. „Bogʻi Shaxroro“, „Bogʻi Jahonoro“, „Oʻrtabogʻ“, „Bogʻi vafo“ va „Bogʻi Bobur“ kabi oromgohlar tashkil etdi. Shahar ichidagi Bolo Hisor qalʼasini oʻz qarorgohiga aylantirib, uni qayta taʼmirlatdi, yangi imoratlar qurdirdi va oilasi bilan shu qalʼada yashadi. Uning Humoyun, Gulbadanbegim, Komron va Hindol ismli farzandlari shu yerda tugʻiladi. 1506-yil bahorda vafot etgan Qutlugʻ Nigorxonim Mirzo Ulugʻbek shu yerda bunyod ettirgan „Bogʻi Navroʻziy“ga dafn etiladi. Bobur Afgʻonistonda bir fotih sifatida emas, balki shu yurt, el obodonligi va ravnaqi uchun jon kuydirgan tadbirli hukmron sifatida qizgʻin faoliyat koʻrsatdi, uning manfaatlari yoʻlida odilona va oqilona ish tutdi. Afgʻonistondagi amaliy faoliyatiga koʻra, Bobur butun Xuroson va Movarounnahrda qudratli davlat boshligʻi va muzaffar sarkarda sifatida katta obroʻ orttira bordi, mintaqadagi siyosiy hayot eʼtiborli oʻringa koʻtarildi. Shayboniylarning tobora kuchayib borayotgan yurishiga qarshi birgalikda chora koʻrish masalasida Sulton Husayn Boyqaro barcha temuriy hukmdorlar qatorida Boburni ham maslahat yigʻiniga maxsus taklif etishi ana shunday yuksak nufuzni koʻrsatuvchi dalildir. Bobur shu taklif boʻyicha Hirotga otlanadi. Husayn Boyqaroning toʻsatdan vafot etishiga (1506-yil) qaramay, u Hirotga boradi va temuriy hukmdorlar bilan uchrashib muzokaralar oʻtkazadi. Temuriy hukmdorlarning birlashib Shayboniyxon qoʻshinlariga toʻsiq qoʻyish rejalari amalga oshmaydi va tez orada birin-ketin magʻlubiyatga uchrab, saltanatni batamom qoʻldan chiqaradilar.1507-yil boshlarida Bobur Hindistonga yurish boshlaydi, ammo bu urinishi muvaffaqiyatsiz tugab, yana poytaxt Kobulga qaytadi.',
   lorem1: '1. Movarounnahr taxti uchun kurash 👇',
-  lorem2: '2. Boburning Andijonni qayta egallashi 👇' ,
+  lorem2: '2. Boburning Andijonni qayta egallashi 👇',
   lorem3: '3. Samarqandni bosib olish uchun qilingan harakatlar  👇',
   lorem4: '4. Hindistonni egallashi 👇',
   lorem5: '5. Kobulni egallashi  👇',
+  not: "Ma'lumot",
+  found: "Yo'q",
+  subcrib1: 'Bizning xabarnomamizga obuna bo`ling',
+  subcrib2: 'E-pochtangizga obuna bo`ling va qiziqishlaringiz asosida yangiliklar byulleteni va qiziqarli yangiliklarga obuna bo`ling',
 }
 
 export default translationsUz
