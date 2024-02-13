@@ -34,6 +34,10 @@ const translationsEn = {
   lorem3: '3. Efforts to conquer Samarkand  👇',
   lorem4: '4. Occupation of India  👇',
   lorem5: '5. Capture of Kabul  👇',
+  not:"NOT",
+  found:"FOUND",
+  subcrib1:"Subcribe our Newsletter",
+  subcrib2:"Subscribe your email for newsletter and featured news based on your interest",
 }
 
 export default translationsEn
