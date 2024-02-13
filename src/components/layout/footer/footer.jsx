@@ -1,27 +1,31 @@
 import { Heading3, Heading5 } from '../../common'
 import { BsInstagram } from 'react-icons/bs'
-import { BsTwitter } from 'react-icons/bs'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FooterTop } from './components/footer-top'
+import { useTranslation } from 'react-i18next'
+
 
 export const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <div>
       <FooterTop />
       <div className='flex justify-between items-start px-[23px] py-[31px] bg-grey dark:bg-slate-800 border-b'>
         <div className='flex flex-col gap-[10px]'>
-          <Heading3>My Account</Heading3>
-          <Heading5>My Account</Heading5>
-          <Heading5>Our stores</Heading5>
-          <Heading5> Contact us</Heading5>
-          <Heading5>Career</Heading5>
+          <Heading3>{t("myaccount")}</Heading3>
+          <Heading5>{t("myaccount")}</Heading5>
+          <Heading5>{t("ourstores")}</Heading5>
+          <Heading5>{t("contactuc")}</Heading5>
+          <Heading5>{t("carrer")}</Heading5>
         </div>
+
         <div className='flex flex-col gap-[10px]'>
-          <Heading3>Help & Guide</Heading3>
-          <Heading5>Help Center</Heading5>
-          <Heading5>How to Buy</Heading5>
-          <Heading5>Shipping & Delivery</Heading5>
-          <Heading5>Product Policy</Heading5>
+          <Heading3>{t("helpguide")}</Heading3>
+          <Heading5>{t("helpcenter")}</Heading5>
+          <Heading5>{t("howtobuy")}</Heading5>
+          <Heading5>{t("shippingdelivery")}</Heading5>
+          <Heading5>{t("productpolicy")}</Heading5>
         </div>
 
         <div className='flex flex-col gap-[10px]'>
