@@ -11,10 +11,10 @@ import { useEffect, useState } from 'react'
 import i18n from './locale/i18n'
 import { WalksMade } from './components/pages/walksMade'
 
-function App () {
+function App() {
   const [theme, setTheme] = useState(null)
 
-  const changeLang = value => i18n.changeLanguage(value)
+  const changeLang = (value) => i18n.changeLanguage(value)
   const changeTheme = () => setTheme(!theme)
 
   useEffect(() => {
@@ -26,32 +26,32 @@ function App () {
   }, [theme])
 
   return (
-    <div className='dark:bg-slate-900 bg-white'>
-      <div className='container dark:bg-slate-900 font-cera-pro'>
+    <div className="dark:bg-slate-900 bg-white">
+      <div className="container dark:bg-slate-900 font-cera-pro">
         <NavbarTop />
         <Navbar changeLang={changeLang} changeTheme={changeTheme} theme={theme} />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path="/" element={<Home />} />
 
-          <Route path='/shop' element={<Shop />}>
-            <Route path='/shop/shopping-cart' element={<Cart />} />
-            <Route path='/shop/checkout' element={<Checkout />} />
+          <Route path="/shop" element={<Shop />}>
+            <Route path="/shop/shopping-cart" element={<Cart />} />
+            <Route path="/shop/checkout" element={<Checkout />} />
           </Route>
 
-          <Route path='/walksMade' element={<WalksMade />} />
-          <Route path='/account' element={<Account />}>
-            <Route path='shopping-details' element={<AccountDetails />} />
-            <Route path='address' element={<Address />} />
-            <Route path='downloads' element={<Downloads />} />
-            <Route path='orders' element={<Orders />} />
-            <Route path='reports' element={<Reports />} />
-            <Route path='support' element={<Support />} />
-            <Route path='wishlist' element={<Wishlist />} />
+          <Route path="/walksMade" element={<WalksMade />} />
+          <Route path="/account" element={<Account />}>
+            <Route path="shopping-details" element={<AccountDetails />} />
+            <Route path="address" element={<Address />} />
+            <Route path="downloads" element={<Downloads />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="support" element={<Support />} />
+            <Route path="wishlist" element={<Wishlist />} />
           </Route>
-          
-          <Route path='login' element={<Auth to={true} />} />
-          <Route path='register' element={<Auth to={false} />} />
-          <Route path='*' element={<NotFound />} />
+
+          <Route path="login" element={<Auth to={true} />} />
+          <Route path="register" element={<Auth to={false} />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
