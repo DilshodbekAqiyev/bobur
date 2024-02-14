@@ -2,19 +2,20 @@ import { AccountDetails, Address, Downloads, Orders, Reports, Support, Wishlist 
 import { Account } from './pages/account/account'
 import { Home } from './pages/home/home'
 import { NotFound } from './pages/not-found/not-found'
-import { Cart, Checkout, Shop } from './pages/shops'
 import { Footer, Navbar, NavbarTop } from './components/layout'
 import { Auth } from './pages/auth/auth'
-import {ContactUS} from "./pages/contactus/contactus";
+import { ContactUS } from './pages/contactus/contactus'
 import { Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import i18n from './locale/i18n'
 import { WalksMade } from './components/pages/walksMade'
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import useLocalStorageUserID from './hook/getUser/getUser'
+import { Gazalls, LikedGazals, SingleGazal } from './pages/gazallar'
+import 'react-toastify/dist/ReactToastify.css'
+import 'react-h5-audio-player/lib/styles.css'
 
-function App () {
+function App() {
   const [theme, setTheme] = useState(null)
   const [isRegistrated, setIsRegistrated] = useState(false)
   const { userID } = useLocalStorageUserID()
@@ -38,19 +39,18 @@ function App () {
   }, [theme])
 
   return (
-
     <div className="dark:bg-slate-900 bg-white">
       <div className="container dark:bg-slate-900 font-cera-pro">
         <NavbarTop />
         <Navbar changeLang={changeLang} changeTheme={changeTheme} theme={theme} isRegistrated={isRegistrated} />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contactus' element={<ContactUS/>}/>
-          <Route path="/shop" element={<Shop />}>
-            <Route path="/shop/shopping-cart" element={<Cart />} />
-            <Route path="/shop/checkout" element={<Checkout />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/contactus" element={<ContactUS />} />
 
+          <Route path="gazallar" element={<Gazalls />}>
+            <Route path=":id" element={<SingleGazal />} />
+          </Route>
+          <Route path="sevimli-gazallar" element={<LikedGazals />} />
           <Route path="/walksMade" element={<WalksMade />} />
           <Route path="/account" element={<Account />}>
             <Route path="shopping-details" element={<AccountDetails />} />
@@ -68,7 +68,6 @@ function App () {
         </Routes>
         <ToastContainer />
         <Footer />
-
       </div>
     </div>
   )
