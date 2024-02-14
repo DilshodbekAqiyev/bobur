@@ -1,5 +1,3 @@
-import { AccountDetails, Address, Downloads, Orders, Reports, Support, Wishlist } from './pages/account'
-import { Account } from './pages/account/account'
 import { Home } from './pages/home/home'
 import { NotFound } from './pages/not-found/not-found'
 import { Footer, Navbar, NavbarTop } from './components/layout'
@@ -11,7 +9,7 @@ import i18n from './locale/i18n'
 import { WalksMade } from './components/pages/walksMade'
 import { ToastContainer } from 'react-toastify'
 import useLocalStorageUserID from './hook/getUser/getUser'
-import { Gazalls, LikedGazals, SingleGazal } from './pages/gazallar'
+import { Gazalls, LikedGazals } from './pages/gazallar'
 import 'react-toastify/dist/ReactToastify.css'
 import 'react-h5-audio-player/lib/styles.css'
 
@@ -46,21 +44,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactus" element={<ContactUS />} />
-
-          <Route path="gazallar" element={<Gazalls />}>
-            <Route path=":id" element={<SingleGazal />} />
-          </Route>
-          <Route path="sevimli-gazallar" element={<LikedGazals />} />
+          <Route path="/gazallar" element={<Gazalls />} />
+          <Route path="/sevimli-gazallar" element={<LikedGazals />} />
           <Route path="/walksMade" element={<WalksMade />} />
-          <Route path="/account" element={<Account />}>
-            <Route path="shopping-details" element={<AccountDetails />} />
-            <Route path="address" element={<Address />} />
-            <Route path="downloads" element={<Downloads />} />
-            <Route path="orders" element={<Orders />} />
-            <Route path="reports" element={<Reports />} />
-            <Route path="support" element={<Support />} />
-            <Route path="wishlist" element={<Wishlist />} />
-          </Route>
 
           <Route path="login" element={<Auth to={true} />} />
           <Route path="register" element={<Auth to={false} />} />

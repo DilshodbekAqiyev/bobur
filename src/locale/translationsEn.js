@@ -5,6 +5,7 @@ const translationsEn = {
   walksMade: 'WalksMade',
   loginBtn: 'Login',
   allPlants: 'All Plants',
+  sugnout: 'Sign Out',
   newArrivals: 'New Arrivals',
   sale: 'Sale',
   shopNow: 'SHOP NOW',
@@ -12,32 +13,42 @@ const translationsEn = {
   ourstores: 'Our stores',
   contactuc: 'Contact us',
   contactuc1: 'Contact us',
-  thema:"On the eve of Babur Mirza's birthday, we remind you of the 10 most important facts about the great scientist and general:",
-  fact1: "1. Babur's father - Umarshaikh Mirza was the governor of Ferghana region, his mother was the daughter of Khan of Mongolia Qutlugh Nigorkhanim and Yunus Khan, governor of Tashkent.",
-  fact2:"2. His real name is Zahiruddin Muhammad ibn Umarshaikh Mirza. He was nicknamed `Babur` (`Lion`) from his youth for his courage and bravery.",
-  fact3:"3. After the tragic death of his father at Akhsida at the age of 39, the eldest son of the family, 12-year-old Babur, ascended the throne as crown prince (June 1494).",
-  fact4:"4. Babur built settlements in Afghanistan such as `Boghi Shahroro`, `Boghi Jahanoro`, `Ortabog`, `Boghi Wafa` and `Boghi Babur`.",
+  thema:
+    "On the eve of Babur Mirza's birthday, we remind you of the 10 most important facts about the great scientist and general:",
+  fact1:
+    "1. Babur's father - Umarshaikh Mirza was the governor of Ferghana region, his mother was the daughter of Khan of Mongolia Qutlugh Nigorkhanim and Yunus Khan, governor of Tashkent.",
+  fact2:
+    '2. His real name is Zahiruddin Muhammad ibn Umarshaikh Mirza. He was nicknamed `Babur` (`Lion`) from his youth for his courage and bravery.',
+  fact3:
+    '3. After the tragic death of his father at Akhsida at the age of 39, the eldest son of the family, 12-year-old Babur, ascended the throne as crown prince (June 1494).',
+  fact4:
+    '4. Babur built settlements in Afghanistan such as `Boghi Shahroro`, `Boghi Jahanoro`, `Ortabog`, `Boghi Wafa` and `Boghi Babur`.',
   fact5: "5. Babur's children named Humayun, Gulbadan Begum, Komron and Hindol were born in Kabul.",
-  fact6:"6. Babur captured Delhi in April 1526 (age 43) at Panipat, defeating the 100,000-strong army of his arch-rival Ibrahim Lodi, the Sultan of Delhi, with 12,000 soldiers. Soon after, the second largest chief would defeat an Indian chieftain. Rano Sango and Northern India subject to Bengal.",
-  fact7: "7. Babur's work `Mubayyin` was written in the Masnavi style and is dedicated to Islamic jurisprudence and Sharia beliefs.",
-  fact8:"8. The events of `Boburnoma` cover the events from Andijan, Samarkand, Khojand, Herat to Kabul and Agra. In it, the events that lasted for nearly 50 years from Central Asia to India show their true expression and found its value",
-  fact9:"9. Babur, who handed over the kingdom to Humayun some time ago, died at the age of 47 in Agra, the capital of the kingdom he founded, and was buried there, later (1539), according to his will. He brought his casket to Kabul. , built it himself. They put the garden in Babur.",
-  fact10: "10. The Babur dynasty, founded by Babur, ruled India for about three and a half centuries.",
+  fact6:
+    '6. Babur captured Delhi in April 1526 (age 43) at Panipat, defeating the 100,000-strong army of his arch-rival Ibrahim Lodi, the Sultan of Delhi, with 12,000 soldiers. Soon after, the second largest chief would defeat an Indian chieftain. Rano Sango and Northern India subject to Bengal.',
+  fact7:
+    "7. Babur's work `Mubayyin` was written in the Masnavi style and is dedicated to Islamic jurisprudence and Sharia beliefs.",
+  fact8:
+    '8. The events of `Boburnoma` cover the events from Andijan, Samarkand, Khojand, Herat to Kabul and Agra. In it, the events that lasted for nearly 50 years from Central Asia to India show their true expression and found its value',
+  fact9:
+    '9. Babur, who handed over the kingdom to Humayun some time ago, died at the age of 47 in Agra, the capital of the kingdom he founded, and was buried there, later (1539), according to his will. He brought his casket to Kabul. , built it himself. They put the garden in Babur.',
+  fact10: '10. The Babur dynasty, founded by Babur, ruled India for about three and a half centuries.',
   carrer: 'Career',
   helpguide: 'Help & Guide',
   helpcenter: 'Help Center ',
   howtobuy: 'How to Buy',
   shippingdelivery: 'Shipping & Delivery',
   productpolicy: 'Product Policy',
-  fakultet:"Faculty of Applied Mathematics and Intellectual Technologies, Termiz State University.",
-  just:"Just Say Hello!",
-  yourname:"Your name",
-  yournumber:"Your phone number",
-  email:"Email",
-  message:"Message",
-  sendmessage:"Send message",
-  join:"Join",
-  justabout:"Do you fancy saying hi to me or you want to get started with your project and you need my help? Fell free to contact me.",
+  fakultet: 'Faculty of Applied Mathematics and Intellectual Technologies, Termiz State University.',
+  just: 'Just Say Hello!',
+  yourname: 'Your name',
+  yournumber: 'Your phone number',
+  email: 'Email',
+  message: 'Message',
+  sendmessage: 'Send message',
+  join: 'Join',
+  justabout:
+    'Do you fancy saying hi to me or you want to get started with your project and you need my help? Fell free to contact me.',
   about:
     "Bobur (taxallusi; full name Zahiriddin Muhammad ibn Umarshayx Mirzo; February 14, 1483 – December 26, 1530) was a prominent representative of Uzbek literature, a poet, historian, geographer, statesman, skilled military leader, founder of the Baburid dynasty, and a descendant of Timur. He served as the heir to Amir Temur. Bobur was one of the great personalities of his time, and his poems and quatrains are still widely read and appreciated today. He had six wives: Bibi Muboraka, Mohimbegim, Zaynab Sulton Begim, Oysha Sulton Begim, Maʼsuma Sulton Begim, and Soliha Sulton Begim. His father, Umarshayx Mirzo, was the ruler of Fergana Province, and his mother, Qutlugʻ Nigorxonim, was the daughter of Yunusxon, the ruler of Tashkent. Bobur's paternal grandmother was from the Moghulistan region. Bobur's father, Umarshayx Mirzo, was a ruler in Fergana, while his mother Qutlugʻ Nigorxonim was a learned and virtuous woman. Bobur took charge of the government with her support, and she actively assisted him in matters of governance and in military campaigns. Umarshayx Mirzo's court was located within the city walls of Andijon, and he spent his early years there. Bobur conducted his military campaigns in the Sirdaryo region and held the remaining months of the year in Andijon.Bobur, like all Timurid princes, received a special education under the guidance of distinguished scholars and mentors. He studied military science, Islamic jurisprudence, and various languages, including Arabic. He extensively studied historical and literary works, showing a keen interest in science, theology, and jurisprudence. Due to his courage and bravery, he earned the title Bobur (meaning tiger or lion) from his youth.Bobur's youth was spent in Andijon, where he received his early education. His father took him on expeditions and battles, allowing him to gain practical experience in warfare. Bobur showed interest in intellectual pursuits and regularly engaged in scholarly discussions with notable scholars and thinkers. His upbringing and bravery earned him the nickname 'Bobur' (meaning courageous or lion-hearted). After his father's death, Bobur faced internal conflicts and external threats but ultimately established himself as the ruler, assuming the title of Babur Shah in June 1494.",
   jang1:

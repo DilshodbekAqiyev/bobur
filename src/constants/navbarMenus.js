@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
+
 export const navbarMenus = [
   {
     id: uuidv4(),
@@ -9,11 +10,6 @@ export const navbarMenus = [
     id: uuidv4(),
     name: "G'azallar",
     link: '/gazallar',
-  },
-  {
-    id: uuidv4(),
-    name: 'plantLink',
-    link: '/plant-care',
   },
   {
     id: uuidv4(),
