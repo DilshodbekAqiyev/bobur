@@ -1,4 +1,5 @@
 import { About, Hero } from '../../components/pages/home'
+import { About, Fact, Hero, Information, Menu, Sort } from '../../components/pages/home'
 import { useTranslation } from 'react-i18next'
 import { Gazallar } from '../gazallar'
 
@@ -12,6 +13,7 @@ export const Home = () => {
       </div>
       <About />
       <Gazallar />
+      <Fact />
     </div>
   )
 }

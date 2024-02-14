@@ -15,7 +15,6 @@ export const WalksMade = () => {
   return (
     <div>
       <Accordions />
-      
       <div>
         {/* 1 */}
         <div className='pt-[30px] pb-[30px] flex justify-between mb-[30px]'>

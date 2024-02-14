@@ -18,3 +18,8 @@ a.active{
 .card:hover .icon{
   display: flex;
 }
+
+option{
+  background-color: rgb(15 23 42);
+  padding:10px ;
+}
