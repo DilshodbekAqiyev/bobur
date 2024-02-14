@@ -6,6 +6,17 @@
       "email": "example@gmail.com",
       "password": "12345678",
       "likedGazals": []
+    },
+    {
+      "id": "69c900d5-3773-48b9-8405-21428efd6b75",
+      "userName": "naufvsdf",
+      "email": "acsdnucalksd@gmail.com",
+      "password": "sugnout: 'Chiqish',",
+      "likedGazals": [
+        "840c4ae6-82a2-42eb-a0e7-b015739c6ead",
+        "6289d661-0e84-4324-a005-4993f59fa56c",
+        "30298fcd-195a-4214-8c77-f6f07d39dd0c"
+      ]
     }
   ],
   "gazals": [

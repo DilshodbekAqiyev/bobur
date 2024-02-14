@@ -79,6 +79,16 @@ export const Navbar = ({ changeLang, changeTheme, theme, isRegistrated }) => {
                 <span className="text-white text-12 font-medium flex items-center justify-center w-[12px] h-[12px] bg-green rounded-[50%] absolute top-0 right-0" />
               )}
             </Link>
+            <div
+              onClick={() => {
+                localStorage.clear()
+                window.location.reload()
+              }}
+            >
+              <Button styles="gap-[4px] py-[8px] px-[17px]" svg={<HiOutlineLogout />}>
+                sugnout
+              </Button>
+            </div>
           </>
         ) : (
           <>
