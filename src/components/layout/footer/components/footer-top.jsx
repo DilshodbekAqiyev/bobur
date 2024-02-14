@@ -51,7 +51,7 @@ export const FooterTop = () => {
             className="text-white bg-green text font-medium leading-2 flex items-center justify-center border border-transparent absolute top-0 right-0 py-3 px-5 rounded-[8px] mt-[0.12px]"
             type="submit"
           >
-            Join
+            {t("join")}
           </button>
         </form>
       </div>

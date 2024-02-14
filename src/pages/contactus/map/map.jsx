@@ -1,45 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 export const MapComponent = () => {
-  const [map, setMap] = useState(null);
-
-  useEffect(() => {
-    // Google Maps API kalit so'zi
-    const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
-
-    // Google Maps API-ni yuklash
-    const loadGoogleMapsScript = () => {
-      const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
-      script.async = true;
-      script.onload = initMap;
-      document.body.appendChild(script);
-    };
-
-    // Xarita boshlang'ich holatini sozlash va joylashuvi
-    const initMap = () => {
-      const mapOptions = {
-        center: { lat: 41.8781, lng: -87.6298 }, // Chicago koordinatalari (o'zgartiring)
-        zoom: 12, // Xarita zoom darajasi
-      };
-
-      const mapInstance = new window.google.maps.Map(
-        document.getElementById('map'),
-        mapOptions
-      );
-
-      setMap(mapInstance);
-    };
-
-    // Google Maps API-ni yuklash
-    loadGoogleMapsScript();
-  }, []);
-
+    let apiKey = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228470.77992701295!2d67.29522851001707!3d37.265872956059816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f352dffc61512e5%3A0xa9327e0cb650584f!2z0KLQtdGA0LzQtdC30YHQutC40Lkg0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCj0L3QuNCy0LXRgNGB0LjRgtC10YI!5e1!3m2!1sru!2s!4v1707894948867!5m2!1sru!2s';
   return (
-    <div
-      id="map"
-      style={{ width: '100%', height: '400px', border: '1px solid #ddd' }}
-    />
+    <div >
+      <iframe src={apiKey} className='w-[100%] h-[500px] mb-[50px] rounded-2xl' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   );
 };
 
