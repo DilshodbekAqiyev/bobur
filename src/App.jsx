@@ -11,7 +11,7 @@ import i18n from './locale/i18n'
 import { WalksMade } from './components/pages/walksMade'
 import { ToastContainer } from 'react-toastify'
 import useLocalStorageUserID from './hook/getUser/getUser'
-import { Gazalls, SingleGazal } from './pages/gazallar'
+import { Gazalls, LikedGazals, SingleGazal } from './pages/gazallar'
 import 'react-toastify/dist/ReactToastify.css'
 import 'react-h5-audio-player/lib/styles.css'
 
@@ -50,7 +50,7 @@ function App() {
           <Route path="gazallar" element={<Gazalls />}>
             <Route path=":id" element={<SingleGazal />} />
           </Route>
-
+          <Route path="sevimli-gazallar" element={<LikedGazals />} />
           <Route path="/walksMade" element={<WalksMade />} />
           <Route path="/account" element={<Account />}>
             <Route path="shopping-details" element={<AccountDetails />} />

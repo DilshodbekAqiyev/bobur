@@ -30,36 +30,43 @@ export const Gazallar = () => {
     fetchData()
   }, [])
 
-  useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        if (userID) {
-          const response = await fetch(`${API}/users/${userID}`, {
-            method: 'GET',
-          })
+  const fetchUserData = async () => {
+    try {
+      if (userID) {
+        const response = await fetch(`${API}/users/${userID}`, {
+          method: 'GET',
+        })
 
-          if (!response.ok) {
-            throw new Error(`Failed to fetch user data. Status: ${response.status}`)
-          }
-
-          const userData = await response.json()
-          setUser(userData)
-          setLikedGazals(userData.likedGazals || [])
+        if (!response.ok) {
+          throw new Error(`Failed to fetch user data. Status: ${response.status}`)
         }
-      } catch (error) {
-        console.error('Error fetching users:', error.message || 'Unknown error')
-      }
-    }
 
+        const userData = await response.json()
+        setUser(userData)
+        setLikedGazals(userData.likedGazals || [])
+      }
+    } catch (error) {
+      console.error('Error fetching users:', error.message || 'Unknown error')
+    }
+  }
+
+  useEffect(() => {
     fetchUserData()
   }, [userID])
 
-  const handleLike = (gazalId) => {
-    const isLiked = likedGazals.includes(gazalId)
-    const updatedLikedGazals = isLiked ? likedGazals.filter((id) => id !== gazalId) : [...likedGazals, gazalId]
+  const handleLike = async (gazalId) => {
+    try {
+      const isLiked = likedGazals.includes(gazalId)
+      const updatedLikedGazals = isLiked ? likedGazals.filter((id) => id !== gazalId) : [...likedGazals, gazalId]
 
-    setLikedGazals(updatedLikedGazals)
-    setUser((prevUser) => ({ ...prevUser, ...user, likedGazals: updatedLikedGazals }))
+      setLikedGazals(updatedLikedGazals)
+      if (!user?.userName) {
+        await fetchUserData()
+      }
+      setUser((prevUser) => ({ ...prevUser, likedGazals: updatedLikedGazals }))
+    } catch (error) {
+      console.error('Error handling like:', error.message || 'Unknown error')
+    }
   }
 
   useEffect(() => {
@@ -67,7 +74,7 @@ export const Gazallar = () => {
       try {
         if (userID) {
           await fetch(`${API}/users/${userID}`, {
-            method: 'PUT',
+            method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
             },
@@ -94,7 +101,7 @@ export const Gazallar = () => {
         {gazals?.map((gazal) => (
           <div key={gazal.id} className="border border-white rounded-md p-3 relative">
             <button className="absolute top-1 right-1 cursor-pointer">
-              {likedGazals.includes(gazal.id) ? (
+              {user.likedGazals?.includes(gazal.id) ? (
                 <AiFillHeart
                   className="text-black dark:text-white cursor-pointer"
                   onClick={() => handleLike(gazal.id)}

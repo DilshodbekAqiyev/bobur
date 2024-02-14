@@ -5,7 +5,7 @@
       "userName": "Example",
       "email": "example@gmail.com",
       "password": "12345678",
-      "favourite": []
+      "likedGazals": []
     }
   ],
   "gazals": [
@@ -19,79 +19,79 @@
       "id": "6289d661-0e84-4324-a005-4993f59fa56c",
       "name": "Bahor ayyomidur g’azali",
       "description": "Bahor ayyomidur dog'i yigitlikning avonidur, Ketur soqiy, sharobi nobkim - ishrat zamonidur.   Gahi sahro uzori lola shaklidin erur gulgun, Gahi sahni chaman gul chehrasidin arg'uvonidur.   Yana sahni chaman bo‘ldi munaqqash rangi gullardin, Magarkim sunning naqqoshig'a rang imtihonidur.   Yuzung, ey sarv, jonim gulshanining toza gulzori, Qading, ey gul, hayotim bog'ining sarvi ravonidur.   Ne yerda bo‘lsang, ey gul, andadur chun joni Boburning, G'aribingg'a tarahhum aylagilkim, andi jonidur.",
-      "src": "/public/audios/Bobur-Bahor-ayyomidur-gazal.mp3"
+      "src": "/audios/Bobur-Bahor-ayyomidur-gazal.mp3"
     },
     {
       "id": "30298fcd-195a-4214-8c77-f6f07d39dd0c",
       "name": "Bo'lmadim umrimda g’azali",
       "description": "To'lqin eshigi senga ayla bosa yovonida. Bilmadim bu derda yor bo'lgan inson nima, Yuragimni yoqalib berib, deb bo'lganida. O'zing yoqalsang ham, yo'q qolsa yana yo'q, Endi menda qolgan to'qqizim qara yo'q. Eskiya payg'ambarlar yuragi bilan bordi, Nega mening yuragim g'animatda qo'rqan yo'q? G'ururimni yerni chalmay qo'yding so'ngida, Senga yor bo'lmagan odamni top borida. Endi yo'qolsang ham, sen boshingda yo'q, Men seni iloji bor menimcha bor yo'q. Haqiqatga oshkor bo'lsin bir soat davomida, Sani qarqirdi, bu noto'g'ri ravon yo'q. O'tsin bo'shlig'ingda dildagi xarob, Sevib yurib o'lsang ham, eshitganim yo'q. Nega yuragimni qilasan aqldan boshqacha, Bir az insof bera, men bir dost uchun qo'rqan yo'q. Fikrimni o'ylab xursand qilma meni, Bu shoirning ko'ngli xurram, ona xavf tanqidiga qo'rqan yo'q. O'zgarib ketgan do'stim, birga bo'ldik, Mana seni yo'qtim, qilsam ham sanqdik. Nega gapirasen menga baxtli nima, Mana meni hayotimga boshlamadim umrimda.",
-      "src": "/public/audios/Bobur-Bo‘lmadim-umrumda-gazal.mp3"
+      "src": "/audios/Bobur-Bo‘lmadim-umrumda-gazal.mp3"
     },
     {
       "id": "58d4f094-9e04-4080-ac01-8ad8bb7eb3c3",
       "name": "“Qoldimu” radifli g’azali",
       "description": "Charxning men ko‘rmagan jabr-u jafosi qoldimu?! Xasta ko‘nglum chekmagan dard-u balosi qoldimu?!   Meni xor etti-yu qildi muddaiyni parvarish, Dahri dunparvarning o‘zga muddaosi qoldimu?!   Meni o‘lturdi jafo-yu javr birla ul quyosh, Emdi turguzmak uchun mehr-u vafosi qoldimu?!   Oshiq o‘lg'och ko‘rdum o‘lumni o‘zumga, ey rafiq, O‘zga ko‘nglumning bu olamda harosi qoldimu?!   Ey ko‘ngul, gar Bobur ul olamni istar, qilma ayb, Tengri uchun de bu olamning safosi qoldimu?!",
-      "src": "/public/audios/Bobur-Charxning-men-ko‘rmagan-gazal.mp3"
+      "src": "/audios/Bobur-Charxning-men-ko‘rmagan-gazal.mp3"
     },
     {
       "id": "d5f00a40-de2a-474e-9c40-025b15916ff5",
       "name": "Chun falak qo'ymas meni g’azali",
       "description": "Chunki falak qo'ymas meni bir daqiqa vasl ayyomida, Tong yo'q, ey bemerh, agar o'lsam firoqing sizda. Ey ko'ngul, yuzin ko'rib, zulfi parishonning sog'in, Shomi xijrondin tavahhum aylana vasl ayyomida. Zulfidakim maskan etting, ko'r zanaxdon choxini, Voqif o'lg'ilkim, erursen ajdahoning komida. G'unchadek og'zing g'ami ko'nglumda gar yo'q, bas nedur Chok ko'nglum xayoti gul g'unchasi andomida? Yorning payg'omi etkach, topti jon farsuda tan, Iso e'jozi magar muzmardurur payg'omida? Bobur, ul gul zulfi ostinda emastur xollar, Jon qushin sayid aylar uchun donalardur domida.",
-      "src": "/public/audios/Bobur-Chun-falak-qo‘ymas-meni-gazal.mp3"
+      "src": "/audios/Bobur-Chun-falak-qo‘ymas-meni-gazal.mp3"
     },
     {
       "id": "b62d9166-9667-41b1-9ac8-d38ad936ccfe",
       "name": "G'urbatta ul oy g’azali",
       "description": "G'urbatda ul oy hajri meni pir qilibtur, Hijron bila g'urbat manga ta'sir qilibtur.   Maqdur boricha qiluram sayi visoling, To Tengrini bilmonki, ne taqdir qilibtur.   Taqdirdur ul yon-u bu yon solg'uchi, yo‘qsa, Kimga havasi Sanbal-u Tatyir qilibtur.   Bu Hind yeri hosilidin ko‘p ko‘ngul oldim, Ne sudki, bu yer meni dilgir qilibtur.   Sendin bu qadar qoldi yiroq, o‘lmadi Bobur, Ma'zur tut, ey yorki, taqsir qilibtur.",
-      "src": "/public/audios/Bobur-G‘urbatta-ul-oy-gazal.mp3"
+      "src": "/audios/Bobur-G‘urbatta-ul-oy-gazal.mp3"
     },
     {
       "id": "3d546849-9985-4498-8e90-5a7009fdcccc",
       "name": "Jamoling vasfini g’azali",
       "description": "Jamoling vasfini qildim chamanda, Qizordi gul uyottin anjumanda.   Tamanno qilg'ali la'lingni ko'nglum, Kishi bilmas anikim, qoldi qanda.   Chu jonimdin aziz jonona sensen, Kerakmas jon manga sensiz badanda.   Manga ul dunyoda jannat ne hojat, Eshiking tuprog'i basdur kafanda.   Solib borma meni, ey Yusufi husn, Bu kun Ya'qubtek bayt ul-hazanda.   Uzun sochingdin uzmasmen ko'ngulni, Oyog'ing qayda bo'lsa, boshim anda.   Tilar el mansabi oliy, valekin Atoyi sarvi ozodinga banda.",
-      "src": "/public/audios/Bobur-Jamoling-vasfini-gazal.mp3"
+      "src": "/audios/Bobur-Jamoling-vasfini-gazal.mp3"
     },
     {
       "id": "4fd59bec-3aa0-4fd4-ad59-445e53e4a335",
       "name": "Kim ko'rubdur, ey ko'ngul g’azali",
       "description": "Kim ko‘rubdur, ey ko‘ngul, ahli jahondin yaxshilig‘, Kimki, ondin yaxshi yo‘q, ko‘z tutma ondin yaxshilig‘.   Gar zamonni nayf qilsam ayb qilma, ey rafiq, Ko‘rmadim hargiz, netoyin, bu zamondin yaxshilig‘!   Dilrabolardin yomonliq keldi mahzun ko‘ngluma, Kelmadi jonimg'a hech oromi jondin yaxshilig'.   Ey ko‘ngul, chun yaxshidin ko‘rdung yamonliq asru ko‘p, Emdi ko‘z tutmoq ne ma’ni har yamondin yaxshilig'?   Bori elga yaxshilig' qilg'ilki, mundin yaxshi yo‘q Kim, degaylar dahr aro qoldi falondin yaxshilig!   Yaxshilig' ahli jahonda istama Bobur kibi, Kim ko‘rubdur, ey ko‘ngul, ahli jahondin yaxshilig'?",
-      "src": "/public/audios/Bobur-Kim-ko‘rubdur-ey-ko‘ngul-gazal.mp3"
+      "src": "/audios/Bobur-Kim-ko‘rubdur-ey-ko‘ngul-gazal.mp3"
     },
     {
       "id": "724c575a-dd03-4ba5-bc4a-bf28d1ad9c6b",
       "name": "O'lum uyqusiga g’azali",
       "description": "O‘lum uyqusig'a borib jahondin bo‘ldum osuda, Meni istasangiz, ey do‘stlar, ko‘rgaysiz uyquda.   Nekim taqdir bo‘lsa, ul bo‘lur tahqiq bilgaysiz, Erur jang-u jadal, ranj-u riyozat barcha behuda.   O‘zungni shod tutqil, g'am yema dunyo uchun zinhor, Ki, bir dam g'am yemakka arzimas dunyoyi farsuda.   Zamona ahli ichra, ey ko‘ngul, oyo topilg'aymu, Seningdek dard paymo-vu meningdek dard paymuda.   Ulusdin tinmadim umrimda hargiz lahzaye, Bobur, Magar o‘lsam bu olam ahlidin bo‘lg'aymen osuda.",
-      "src": "/public/audios/Bobur-O‘lum-uyqusig‘a-gazal.mp3"
+      "src": "/audios/Bobur-O‘lum-uyqusig‘a-gazal.mp3"
     },
     {
       "id": "c9dd5875-bacf-49e5-be09-b80317a7b2d4",
       "name": "Qaro zulfing firoqinda g’azali",
       "description": "Qaro zulfing firoqinda parishon ro’zg’orim bor, Yuzungni ishtiyoqida ne sabru ne qarorim bor. Labing bag’rimni qon qildi, ko’zimdin qon ravon qildi, Nechun holim yomon qildi, men andin bir so’rorim bor. Jahondin menga g’am bo’lsa, ulusdin gar alam bo’lsa, Ne g’am yuz muncha ham bo’lsa, seningdek g’amg’usorim bor. Agar muslihmen ar musfid, va gar oshiqmen ar obid, Ne ishing bor sening zohid, meningkim ixtiyorim bor. Fig’onim oshdi bulbuldin, g’ami yo’q zarra bu quldin,",
-      "src": "/public/audios/Bobur-Qaro-zulfing-firoqinda-gazal.mp3"
+      "src": "/audios/Bobur-Qaro-zulfing-firoqinda-gazal.mp3"
     },
     {
       "id": "843d9715-b7a8-4597-9c90-4ec57c1bcc9e",
       "name": "“Topilmas” radifli g’azali",
       "description": "Sendek manga bir yori jafokor topilmas, Mendek sanga bir zori vafodor topilmas.   Bu shakl-u shamoyil bila xud hur-u parisen, Kim jinsi bashar ichra bu miqdor topilmas.   Ag'yor ko‘z olida-u ul yor ayon yo‘q, G‘am xori ko‘ngul ichra-yu g'amxor topilmas.   Ey gul, meni zor etmaki husnung chamanida, Ko‘zni yumub ochquncha, bu gulzor topilmas.   Bobur seni chun yor dedi, yorlig' etgil, Olamda kishiga yo‘q esa, yor topilmas.",
-      "src": "/public/audios/Bobur-Sendek-menga-gazal.mp3"
+      "src": "/audios/Bobur-Sendek-menga-gazal.mp3"
     },
     {
       "id": "f7894f4f-c521-4ea2-902a-9e3a7a594cb6",
       "name": "Sening ishqingda, ey nomehribon... g’azali",
       "description": "Sening ishqingda, ey nomehribon, bexonumon bo‘ldim, Demon bexonumon, ovvorayi ikki jahon bo‘ldum.   Labing gar bermasa bo‘sa nechuk jon elta olg'aymen, Bu yo‘ldakim, adam sahrosig'a emdi ravon bo‘ldum.   So‘rub ul oy labidin og'zining ramzini angladim, Bir og'iz so‘z bila ko‘rungki muncha xurdadon bo‘ldum.   Nechakim qoshi yolar ishqida tuzlukni ko‘rsattim, Vale oxir malomat o‘qlarig'a-o‘q nishon bo‘ldum.   Kular erdim burun Farhodi miskin dostonig'a, Bu Shirindurki oning birla-o‘q hamdoston bo‘ldum.   Visoling davlatig'a yetmasam Bobur kibi, ne tong, Ki hajring mehnatida asr-u zor-u notavon bo‘ldum.",
-      "src": "/public/audios/Bobur-Sening-ishqingda-ey-nomehribon-gazal.mp3"
+      "src": "/audios/Bobur-Sening-ishqingda-ey-nomehribon-gazal.mp3"
     },
     {
       "id": "8147f85c-410b-4f64-acc9-ee44942bb132",
       "name": "Xazon yafrog'i yanglig' g’azali",
       "description": "Xazon yafrog'i yanglig' gul yuzung hajrida sarg'ardim, Kо'rub rahm aylagil, ey lola rux, bu chehrayi zardim.   Sen, ey gul, qo‘ymading sarkashligingni sarvdek hargiz, Ayog'ingg'a tushib, bargi xazondek muncha yolbordim.   Latofat gulshanida gul kabi sen sabz-u xurram qol, Men archi dahr bog'idin xazon yaprog'idek bordim.   Xazondek qon yoshim sorig' yuzumdin el tanaffurda, Bahar range, bihamdilloh, ulusdin o‘zni qutqordim.   Ne toledur mangakim, axtari baxtim topilmaydur, Falak avroqini har nechakim daftardin axtardim.   Ulusning ta'n-u ta'rifi manga, Bobur, barobardur, Bu olamda o‘zumni chun yamon-yaxshidin o‘tkardim.",
-      "src": "/public/audios/Bobur-Xazon-yafrog‘i-yanglig‘-gazal.mp3"
+      "src": "/audios/Bobur-Xazon-yafrog‘i-yanglig‘-gazal.mp3"
     },
     {
       "id": "2b46365d-5ee7-4e99-8e19-bca4125f714a",
       "name": "Yog'lig'ingkim, jon bila g’azali",
       "description": "Yog'lig'ingkim , jon bila men xastadurmen zor anga, Xasta jonlar rishtasidindur magar bar tor anga. Evrulur boshingg'a-vu goho yuzungga yuz qo'yar, Bu jihatdin ot emish gulpech-u gah gulzor anga. Bir chamandur sahnikim, bo'lg'ay binafsha sarbasar, Tegrasi gulzordurkim, bo'lm ag'ay bir xor anga. Yog'lig'ing tokim, yuz-u ko'zungga tegmish bordurur, Yuz maningdek zor-u yuz ming men kibi bemor anga. Ey ko'ngul, yuz рога qilsa yor tiyg'i, g'am yema, Lutf etib gar bogiar o'Isa yog'lig'ini yor anga. Ko'nglum istar yog'lig'ingni, balki andin bir nasim, Yetsa Boburg'a erur jon biria minnatdor anga.",
-      "src": "/public/audios/Bobur-Yog‘lig‘ingkim-jon-bila-gazal.mp3"
+      "src": "/audios/Bobur-Yog‘lig‘ingkim-jon-bila-gazal.mp3"
     }
   ]
 }
