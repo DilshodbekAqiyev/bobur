@@ -73,7 +73,7 @@ export const Register = () => {
         userName: userRegistration.username,
         email: userRegistration.email,
         password: userRegistration.password,
-        favourite: [],
+        likedGazals: [],
       }
 
       const response = await fetch(`${API}/users`, {

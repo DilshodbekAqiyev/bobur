@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 // language
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-// redux
-import { useSelector } from 'react-redux'
 // data
 import { navbarMenus } from '../../../constants/navbarMenus'
 // component
@@ -18,14 +16,30 @@ import { GrSun } from 'react-icons/gr'
 // toast
 import { ToastContainer } from 'react-toastify'
 import useLocalStorageUserID from '../../../hook/getUser/getUser'
+import { API } from '../../../constants/api'
 
 export const Navbar = ({ changeLang, changeTheme, theme, isRegistrated }) => {
   const { t } = useTranslation()
-  const flowers = useSelector((state) => state.flowers.items)
+  const [user, setUser] = useState({})
+  const { userID } = useLocalStorageUserID()
 
   const changeHandler = (e) => {
     changeLang(e.target.value)
   }
+
+  useEffect(() => {
+    const getUserFavourite = async () => {
+      try {
+        const response = await fetch(`${API}/users/${userID}`, {
+          method: 'GET',
+        })
+      } catch (error) {
+        console.error('Error updating user data:', error.message || 'Unknown error')
+      }
+    }
+
+    getUserFavourite()
+  }, [user, userID])
 
   return (
     <nav className="py-[0px] flex sticky top-0 left-0 z-[5] bg-white dark:bg-slate-900 items-center justify-between border-b-[1px]">
@@ -60,7 +74,7 @@ export const Navbar = ({ changeLang, changeTheme, theme, isRegistrated }) => {
             <Link to={'shop/shopping-cart'} className="relative cursor-pointer">
               <BsCartDash className="text-black dark:text-white w-[24px] h-[24px]" />
               <span className="text-white text-12 font-medium flex items-center justify-center w-[12px] h-[12px] bg-green rounded-[50%] absolute top-0 right-0">
-                {flowers.length}
+                {user.favourite.length}
               </span>
             </Link>
           </>

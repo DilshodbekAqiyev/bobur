@@ -7,8 +7,8 @@ export const navbarMenus = [
   },
   {
     id: uuidv4(),
-    name: 'shopLink',
-    link: '/shop',
+    name: "G'azallar",
+    link: '/gazallar',
   },
   {
     id: uuidv4(),
@@ -21,8 +21,8 @@ export const navbarMenus = [
     link: '/walksMade',
   },
   {
-    id:uuidv4(),
-    name:"Contact us",
-    link:"/contactus",
-  }
-];
+    id: uuidv4(),
+    name: 'Contact us',
+    link: '/contactus',
+  },
+]
