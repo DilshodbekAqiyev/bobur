@@ -45,8 +45,7 @@ function App () {
         <Navbar changeLang={changeLang} changeTheme={changeTheme} theme={theme} isRegistrated={isRegistrated} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/contactus' element={<ContactUS/>}>
-
+          <Route path='/contactus' element={<ContactUS/>}/>
           <Route path="/shop" element={<Shop />}>
             <Route path="/shop/shopping-cart" element={<Cart />} />
             <Route path="/shop/checkout" element={<Checkout />} />
@@ -69,6 +68,7 @@ function App () {
         </Routes>
         <ToastContainer />
         <Footer />
+
       </div>
     </div>
   )
