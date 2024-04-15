@@ -8,7 +8,7 @@ export const About = () => {
         <img className="w-[100%]" src="/img/bobur.jpg" alt="Bobur" />
       </div>
       <div className="w-[50%]">
-        <Heading5 styles="text-[12px]">{t('about')}</Heading5>
+        <Heading5 styles="text-[18px]">{t('about')}</Heading5>
       </div>
     </div>
   )

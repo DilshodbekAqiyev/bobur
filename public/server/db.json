@@ -5,7 +5,10 @@
       "userName": "Example",
       "email": "example@gmail.com",
       "password": "12345678",
-      "likedGazals": []
+      "likedGazals": [
+        "30298fcd-195a-4214-8c77-f6f07d39dd0c",
+        "58d4f094-9e04-4080-ac01-8ad8bb7eb3c3"
+      ]
     },
     {
       "id": "69c900d5-3773-48b9-8405-21428efd6b75",
@@ -15,6 +18,25 @@
       "likedGazals": [
         "840c4ae6-82a2-42eb-a0e7-b015739c6ead",
         "6289d661-0e84-4324-a005-4993f59fa56c",
+        "30298fcd-195a-4214-8c77-f6f07d39dd0c"
+      ]
+    },
+    {
+      "id": "0cc28e46-6d32-4c7d-8bc2-696bfed1dfb6",
+      "userName": "Dilshodbek",
+      "email": "dilshodbekwork@gmail.com",
+      "password": "12345678",
+      "likedGazals": [
+        "30298fcd-195a-4214-8c77-f6f07d39dd0c",
+        "3d546849-9985-4498-8e90-5a7009fdcccc"
+      ]
+    },
+    {
+      "id": "72547139-dd98-4991-ab16-d2aac2c3ef5e",
+      "userName": "Sardor",
+      "email": "sardor@gmail.com",
+      "password": "12345678",
+      "likedGazals": [
         "30298fcd-195a-4214-8c77-f6f07d39dd0c"
       ]
     }
